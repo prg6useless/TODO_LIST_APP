@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="todolist.css">
+   
+</head>
+
+<body>
+    <h1 class="title">To Do List</h1>
+        <div class="wrapper">
+        <div class="container">
+            <div class="left">
+                <form id="form">
+                    <label for="post" class="label">Add your list</label>
+                    <br><br>
+                    <textarea name="post" id="input" cols="55" rows="5"></textarea>
+                    <br><br>
+                    <div id="msg"></div>
+                    <button type="submit" class="button">Add</button>
+                </form>
+            </div>
+            <div class="right">
+                <h2>Tasks</h2>
+                <div id="posts">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="todo.js"></script>
+</body>
+
+</html>

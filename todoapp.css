@@ -1,0 +1,90 @@
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background-color: #fff;
+  width: 300px;
+  min-height: 500px;
+  height: auto;
+  border: 5px solid rgba(151, 101, 221, 1);
+  border-radius: 8px;
+  padding: 15px;
+  margin:7rem;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(151, 101, 221, 0.35);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fa-plus {
+  background-color: rgba(151, 101, 221, 0.35);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid rgba(151, 101, 221, 0.35);
+  background-color: rgba(151, 101, 221, 0.35);
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+.done_icon,
+.not-done_icon {
+  color: rgb(23, 169, 12);
+  transition: 0.3s;
+}
+
+.edit_icon {
+  color: rgb(163, 139, 19);
+  transition: 0.3s;
+}
+
+.delete_icon {
+  color: red;
+  transition: 0.3s;
+}
+
+.edit_icon:hover,
+.delete_icon:hover,
+.done_icon:hover,
+.not-done_icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:780px) {
+
+    .app{
+        margin: 7rem 0;
+    }
+}

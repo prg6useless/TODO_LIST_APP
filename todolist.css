@@ -1,0 +1,133 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0 50px;
+  background-color: #ffffff;
+  color: #5a5a5a;
+}
+
+.title {
+  text-align: center;
+}
+
+.label {
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.right h2{
+  font-size: 1.8rem;
+}
+
+#posts {
+  width: 400px;
+}
+
+i {
+  cursor: pointer;
+}
+
+#posts .tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+
+}
+
+.options {
+  display: flex;
+  gap: 25px;
+}
+
+#msg {
+  color: red;
+}
+
+.button {
+  background-color: #5a5a5a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #f5f5f5;
+  color: #5a5a5a;
+  border: 1px solid #5a5a5a;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.edit_icon {
+  color: rgb(241, 213, 69);
+  transition: 0.3s;
+}
+
+.delete_icon {
+  color: red;
+  transition: 0.3s;
+}
+
+.edit_icon:hover,
+.delete_icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.done_icon,.not-done_icon {
+  color:rgb(64, 217, 53);
+}
+
+.done_icon{
+  display: none;
+}
+/* 
+.done:hover {
+  background-color: rgb(33, 46, 46);
+  color: rgb(241, 213, 69);
+  border: 1px solid rgb(241, 213, 69);
+  transform: scale(1.05);
+  cursor: pointer;
+} */
+
+.completed {
+  text-decoration:line-through;
+}
